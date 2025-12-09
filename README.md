@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HJqBG45V)
 # Práctica 3.1: Diagrama de clases
 
 Apoyate en los siguientes recursos para realizar la práctica:
@@ -24,71 +25,66 @@ Cada ejercicio en un archivo diferente, con nombre `EjX_DiagramaClases_NombreTem
 # Título de la Actividad
 
 ## Identificación de la Actividad
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **ID de la Actividad:** 3.1. Diagrama de clases
+- **Módulo:** [Nombre del módulo]  `Entornos de desarrollo`
+- **Unidad de Trabajo:** 3.1. Diagrama de clases
+- **Fecha de Creación:** 9/12/2025
+- **Fecha de Entrega:** 9/12/2025
 - **Alumno(s):**
-    - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-    - **Correo electrónico:** [Correo electrónico g.educaand.es]
-    - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+    - **Nombre y Apellidos:** Daniel Felipe Oliveros Rojas
+    - **Correo electrónico:** doliroj929@g.educaand.es
+    - **Iniciales del Alumno/Grupo:** DFOR
 
 ## Descripción de la Actividad
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+
+Este repositorio contiene la solución a una serie de ejercicios de **Modelado de Sistemas de Información** utilizando el **Diagrama de Clases UML**, y la posterior implementación de las estructuras de diseño en **Kotlin**.
+
+La actividad se centró en interpretar especificaciones de negocio complejas (Biblioteca, E-Commerce, Universidad, Empresa) para aplicar y demostrar los siguientes conceptos y patrones avanzados de POO:
+
+
+    
+-   Definición precisa de **Cardinalidades** y **Restricciones de Negocio**.
+    
+
+----------
 
 ## Instrucciones de Compilación y Ejecución
-1. **Requisitos Previos:**
-    - [Lenguaje de programación y versión]
-    - [Entorno de desarrollo o dependencias necesarias]
 
-2. **Pasos para Compilar el Código:**
-   ```bash
-   [Comando para compilar el código]
-   ```
-
-3. **Pasos para Ejecutar el Código:**
-   ```bash
-   [Comando para ejecutar la aplicación]
-   ```
-
-4. **Ejecución de Pruebas:**
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
-   ```
+1.  **Requisitos Previos:**
+    
+    -   **Lenguaje de programación y versión:** Kotlin .
+        
+    -   **Herramienta de Diagramación:** PlantUML  
+        
 
 ## Desarrollo de la Actividad
-### Descripción del Desarrollo
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
-Los enlaces al codigo se realizaran tal y como se describe [aqui](https://docs.github.com/es/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet)
 
+### Enfoque de Diseño
+
+El desarrollo abordó los requisitos mediante una metodología basada en la **identificación de entidades y relaciones**, priorizando la **coherencia estructural** sobre la implementación de la lógica interna. Se utilizaron las siguientes estrategias clave en el modelado:
+
+1.  **Modelado de la Jerarquía:** Implementación de herencia explícita en UML para capturar la especialización de roles, simplificando el mantenimiento de atributos comunes.
+    
+2.  **Relaciones Complejas:** Uso de la **Clase de Asociación** en escenarios de Muchos-a-Muchos donde la relación posee atributos propios (e.g., `nota` en una `Matricula`).
+    
+3.  **Traducción a Kotlin:** El código refleja directamente el diseño UML, utilizando `private val` para la visibilidad privada, **Propiedades Calculadas** para los métodos derivados, y colecciones (`List`, `MutableList`) para las asociaciones con cardinalidad de muchos.
+    
 
 ### Código Fuente
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.java` o algún enlace directo.]
 
-### Ejemplos de Ejecución
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+A continuación se incluyen enlaces representativos a las estructuras de código fuente y diagramas (se asume que la estructura de archivos existe):
 
-### Resultados de Pruebas
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
+-  
+    
 
-## Documentación Adicional
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+----------
 
 ## Conclusiones
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
 
-## Referencias y Fuentes
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
+La actividad demuestra la habilidad para pasar del análisis de requisitos narrativos al diseño formal **UML** (Clase de Asociación, Herencia, Reflexiva) y, finalmente, a una implementación **Kotlin** que respeta la arquitectura definida, asegurando la **trazabilidad** y el **cumplimiento de las reglas de negocio** desde el modelo hasta el código fuente.
 
-### Notas Adicionales:
-1. **Nombres de Archivos y Repositorios:**
-    - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-    - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-    - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-    - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+
+#Notas Adicionales:#
+
+
+El trabajo no esta totalmente terminado
